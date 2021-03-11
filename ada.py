@@ -1,5 +1,5 @@
 # A list that will contain student names
-student_name = ["Aisha Arigbabu", "Kayinsola Arigbabu", "Toke Ashiru", "Nimah Arigbabu", "Biola Giwa"]
+student_name = ["kate Spade", "Alexander McQueen", "Vera Wang", "Ted Blake", "Giorgio Armani"]
 
 #A list that will contain student id numbers
 student_id = []
