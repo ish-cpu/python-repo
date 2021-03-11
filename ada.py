@@ -17,4 +17,4 @@ for i in range(5):
     student_email.append(first[0] + last + str(student_id[i]) + "@example.com")
     print(f"name: {student_name[i]}\n id: {student_id[i]}\n email: {student_email[i]}")
     print("")
-    print("additions")
+   
