@@ -10,9 +10,9 @@ import random
 #An empty list to store student emails
 student_email = []
 
-#use known range to generate name, email and last 3 digits of id
+#use student name so further additions will be updated
 #remeber () executes first
-for i in range(5):
+for i in range(len(student_name)):
     [first, last] = student_name[i].split(" ")
     student_id.append(random.randint(111111, 999999))
     student_email.append(first[0] + last + str(student_id[i])[-3:] + "@example.com")
