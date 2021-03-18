@@ -20,17 +20,29 @@ import random
 #     print(f"name: {student_name[i]}\n id: {student_id[i]}\n email: {student_email[i]}")
 #     print("")
 
+#import random
+import random 
+
 student_data = []
 #initialize dictionary to store student information
  #name, ID, email 
-student = {}  
+
 #use single loop to populate dictionaries
 #student_name = ["kate Spade", "Alexander McQueen", "Vera Wang", "Ted Blake", "Giorgio Armani"]
 student_name = ["kate Spade", "Alexander McQueen", "Vera Wang", "Ted Blake", "Giorgio Armani"]
 for i in range(len(student_name)):
+    student = {}
     student["name"] = student_name[i]
+    [first, last] = student_name[i].split(" ")
     student["ID"] = random.randint(111111,999999)
-    student["email"] = student["name"] + str(student["ID"]) + "@example.com"
-    #print(student)
-    student_data.append(dict(student))
-    print(student_data[i])
+    student["email"] = first[0] + last + str(student["ID"])[-3:] + "@example.com"
+    
+    student_data.append(student)
+
+#using a separate for loop ensures the print statement is not hardcoded
+for data in student_data:
+    print("")
+    for key in student:
+        print(f"{key}: {student[key]}")
+#     print(f"name: {data["name"]}\nId: {data["ID"]}\nemail: {data["email"]}")
+#     print("")
